@@ -1,43 +1,71 @@
 body {
-    background-color: #f9f7fe;
-    font-family: sans-serif;
+    background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/068/162/original/image-from-rawpixel-id-3402398-jpeg.jpg?1676751267");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Comfortaa', cursive;
+    
 }
 
 h1 {
     text-align: center;
-    font-family: sans-serif;
-    font-size: 36px;
+    margin-top: 20px;
+    font-size: 50px;
+    font-family: 'Monoton', cursive;
+    color: #40373a;
+}
+h1:hover {
+    color: palevioletred;
+    transition: all 800ms ease-in-out;
 }
 
 h2 {
-    margin: 0 0 5px;
+    margin: 0 0 8px;
     font-size: 28px;
 }
 
 select {
-    display: block;
+    
     width: 100%;
     font-size: 18px;
-    border-radius: 5px;
+    border-radius: 4px;
+    border: none;
     padding: 10px;
+    background-color: rgba(61, 58, 62, 0.444) ;
+    cursor: auto;
+    font-family: 'Comfortaa', cursive;
 }
-
+select:hover {
+    background-color: #be89a1bb;
+    border: none;
+    transition: all 400ms ease-in-out;
+}
 .container {
+    color: #3f3e3c;
     max-width: 600px;
     margin: 60px auto;
-    background: white;
+    background: rgba(219, 219, 219, 0.953);
     padding: 30px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.548) 0px 7px 29px 0px;
     border-radius: 10px;
 }
 
 .city {
+    font-family: 'Raleway', sans-serif;
     display: flex;
     margin: 10px 0;
     justify-content: space-between;
-    padding: 30px 0;
-    border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+    padding: 20px 0;
+    
 }
+.city:hover {
+    background-color: #a42e8fbb;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.548) 0px 7px 29px 0px;;
+    color: rgba(122, 222, 255, 0.76);
+    transition: all 500ms ease-in-out;
+}
+
 
 .city:last-child {
     border: none;
@@ -45,12 +73,13 @@ select {
 
 
 .date {
-    opacity: 0.7;
+    opacity: 0.95;
+    color: #195147;
     
 }
 
 .time{
-    font-size: 48px;
+    font-size: 38px;
     font-weight: bold;
 }
 
