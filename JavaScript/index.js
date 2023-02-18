@@ -18,6 +18,33 @@ let parisDateTime = moment().tz("Europe/Paris");
 parisDateElement.innerHTML = parisDateTime.format("MMMM Do YYYY");
 parisTimeElement.innerHTML = parisDateTime.format("h:mm:ss [<small>]A[</small>]");
 }
+//Tijuana
+let tijuanaElement = document.querySelector("#tijuana");
+if (tijuanaElement) {
+let tijuanaDateElement = tijuanaElement.querySelector(".date");
+let tijuanaTimeElement = tijuanaElement.querySelector(".time");
+let tijuanaDateTime = moment().tz("America/Tijuana");
+tijuanaDateElement.innerHTML = tijuanaDateTime.format("MMMM Do YYYY");
+tijuanaTimeElement.innerHTML = tijuanaDateTime.format("h:mm:ss [<small>]A[</small>]");
+}
+//Montreal
+let montrealElement = document.querySelector("#montreal");
+if (montrealElement) {
+let montrealDateElement = montrealElement.querySelector(".date");
+let montrealTimeElement = montrealElement.querySelector(".time");
+let montrealDateTime = moment().tz("America/Montreal");
+montrealDateElement.innerHTML = montrealDateTime.format("MMMM Do YYYY");
+montrealTimeElement.innerHTML = montrealDateTime.format("h:mm:ss [<small>]A[</small>]");
+}
+//Dubai
+let dubaiElement = document.querySelector("#dubai");
+if (dubaiElement) {
+let dubaiDateElement = dubaiElement.querySelector(".date");
+let dubaiTimeElement = dubaiElement.querySelector(".time");
+let dubaiDateTime = moment().tz("Asia/Dubai");
+dubaiDateElement.innerHTML = dubaiDateTime.format("MMMM Do YYYY");
+dubaiTimeElement.innerHTML = dubaiDateTime.format("h:mm:ss [<small>]A[</small>]");
+}
 }
 
 function updateCity(event) {
